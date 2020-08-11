@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Nav from "../../components/Nav/Nav";
+import Jumbotron from "../../components/Jumbotron/Jumbotron";
+// import Card from "./components/Card/Card";
+import Form from "../../components/Form/Form";
 
-class Home extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Hello World</h1>
-            </div>
-        );
-    }
-}
+const Home = () => {
+    return (
+        <div>
+            <Nav />
+            <Form />
+            <Jumbotron />
+        </div>
+    );
+};
 
 export default Home;
